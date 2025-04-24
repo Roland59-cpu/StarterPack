@@ -1,0 +1,340 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Background.jpg'); /* Adjust path if necessary */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: 10px; /* Space between profile box and content column */
+    align-items: flex-start; /* Align content to the top */
+}
+
+.mainContent {
+    width: 50%; /* Keep the width of the main content */
+    margin-right: 20px; /* Add spacing from the right edge */
+}
+
+.mainContent img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: black; /* Change header text color to black */
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center; /* Center-align all h2 headers */
+}
+
+.resumeColumn {
+    width: 90%;
+    background-color: white;
+    padding: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; /* Align all text to the left */
+}
+
+fieldset {
+    margin-top: 20px;
+    color: black;
+    background-color: #A5B68D; /* Set background color for About Me section */
+    padding: 15px; /* Optional: Add padding for better spacing */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    border: none; /* Remove borders */
+}
+
+fieldset:nth-of-type(1) {
+    width: fit-content; /* Adjust width to fit content */
+    background-color: grey; /* Match background color to profile box */
+    border-radius: 20px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    text-align: left; /* Align text to the left */
+}
+
+fieldset:nth-of-type(2) {
+    background-color: rgb(128, 128, 128); /* Match the color of other fieldsets */
+    width: fit-content; /* Match the width of other fieldsets */
+    border-radius: 20px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    text-align: center; /* Center-align the content */
+}
+
+fieldset:nth-of-type(3) {
+    background-color: #C1CFA1 !important; /* Force the correct background color for the experience section */
+    padding: 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add rounded corners */
+    border: none; /* Remove borders */
+    text-align: left; /* Align text to the left */
+}
+
+fieldset:nth-of-type(6) {
+    background-color: #C1CFA1; /* Correct the background color for the experience section */
+    padding: 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add rounded corners */
+    border: none; /* Remove borders */
+    text-align: left; /* Align text to the left */
+}
+
+fieldset.experienceSection {
+    background-color: #C1CFA1 !important; /* Force the correct background color */
+    padding: 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add rounded corners */
+    border: none; /* Remove borders */
+    text-align: left; /* Align text to the left */
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset p {
+    line-height: 1.6;
+}
+
+div[style*="display: flex; justify-content: space-around; margin-top: 20px;"] {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+div[style*="text-align: center; color: navy;"] {
+    text-align: center;
+    color: navy;
+    display: flex; /* Added to display icons horizontally */
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Added spacing between icons */
+}
+
+div[style*="text-align: center; color: navy;"] img {
+    width: 50px;
+    height: 50px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Add spacing between icons */
+    align-items: center;
+}
+
+.iconContainer p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add spacing between icon and text */
+}
+
+.aboutMeIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    color: #B17F59; /* Set text color to navy */
+}
+
+.aboutMeIcons div {
+    text-align: center;
+    color: black; /* Ensure text inside each div is navy */
+}
+
+.aboutMeIcons img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.headerIcons {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0 0;
+    text-align: left; /* Align icons and text to the left */
+}
+
+.headerIcons li {
+    display: flex; /* Use flex to align icon and text horizontally */
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Add spacing between icon and text */
+    margin-bottom: 5px;
+    color: black; /* Change text color to black */
+}
+
+.headerIcons img {
+    width: 20px;
+    height: 20px;
+}
+
+.profileBox {
+/* Add a navy border */
+    border-radius: 20px; /* Optional: Add rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    margin-left: 20px; /* Add spacing from the left edge */
+    width: fit-content; /* Adjust width to fit content */
+    background-color: grey; /* Change background color to grey */
+    text-align: left; /* Center-align text inside the box */
+}
+
+.profileBox div img {
+    float: left;
+    margin-right: 15px;
+}
+
+.profileBox .headerIcons {
+    list-style: right;
+    padding: 0;
+    text-align: left;
+}
+
+.profileBox .headerIcons li {
+    display: flex;
+    align-items: right;
+    margin-bottom: 5px;
+}
+
+.profileBox .headerIcons li img {
+    margin-right: 10px;
+}
+
+.softwareBox, .achievementsBox {
+    border-radius: 20px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    width: fit-content; /* Adjust width to fit content */
+    background-color: grey; /* Change background color to grey */
+    text-align: left; /* Align text to the left */
+    color: black; /* Change text color to black */
+}
+
+.softwareBox h2, .achievementsBox h2 {
+    text-align: left; /* Center-align the heading */
+    color: black; /* Change heading color to black */
+}
+
+.softwareBox ul {
+    text-align: left; /* Align content to the left */
+    list-style: none; /* Remove bullets */
+    padding: 1px; /* Decrease padding */
+    margin: 1px; /* Decrease margin */
+}
+
+.softwareBox li {
+    margin-bottom: 3px; /* Reduce spacing between items */
+    text-align: left; /* Ensure each item is aligned to the left */
+}
+
+.achievementsBox ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.achievementsBox li {
+    margin-bottom: 5px; /* Add spacing between items */
+}
+
+.languageSkill {
+    width: 100%; /* Match the width of the profile box */
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.languageSkill label {
+    font-weight: bold;
+    width: 100px;
+}
+
+.languageSkill progress {
+    width: 70%;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.languageSkill .bubble {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    border: 1px solid grey;
+}
+
+.languageSkill .bubble.filled {
+    background-color: orange; /* Change fill color to orange */
+}
+
+.qrCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ensure it doesn't exceed the width of other fieldsets */
+    padding: 10px;
+}
+
+.qrCodeContainer img {
+    max-width: 100%; /* Ensure the image scales within the container */
+    max-height: 150px; /* Limit the height to match other fieldsets */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.qrCodeFieldset {
+    background-color: grey; /* Match the color of other fieldsets */
+    width: fit-content; /* Match the width of other fieldsets */
+    border-radius: 20px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    text-align: center; /* Center-align the content */
+}
+
+.downloadButtonContainer {
+    text-align: center; /* Center the button at the bottom */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensure the container stays within the body width */
+    padding: 0 10px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.downloadButton {
+    display: inline-block;
+    background-color: white; /* Set button background to white */
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove underline from the link */
+    padding: 10px 20px; /* Add padding for the button */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s, color 0.3s; /* Add hover transition */
+    max-width: 100%; /* Ensure the button stays within the container */
+}
+
+.downloadButton:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
